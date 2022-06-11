@@ -1,29 +1,16 @@
 <?php
 
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Solve;
 
 
 class MarralDuck extends Duck
 {
-    public $flyBehaviours;
-    public $voiceBehaviours;
 
-    public function __construct(FlyInterface $flyBehaviour, VoiceInterface $voiceBehaviour)
+    public function __construct()
     {
-        $this->flyBehaviour = $flyBehaviour;
-        $this->voiceBehaviour = $voiceBehaviour;
-
+        $this->flyBehaviour = new FlyBehaviour();
+        $this->voiceBehaviour = new VoiceBehavioure();
     }
-
-    public function performFly(){
-        $this->flyBehaviour->fly();
-    }
-
-    public function performVoce(){
-        $this->voiceBehaviour->voice();
-    }
-
-
 
 }

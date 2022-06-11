@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Refactoring;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class NavigatorControllerMultipleVehicle extends Controller
 {
@@ -19,6 +20,8 @@ class NavigatorControllerMultipleVehicle extends Controller
             $this->getLimitationsWalk();
             $this->getRouteWalk();
         }
+
+        return 'Build Route';
     }
 
     private function getTraffic()

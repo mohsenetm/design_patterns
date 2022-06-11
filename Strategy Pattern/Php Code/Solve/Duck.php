@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Solve;
 
 
 class Duck
@@ -9,9 +9,13 @@ class Duck
     public FlyInterface $flyBehaviour;
     public VoiceInterface $voiceBehaviour;
 
+    public function display(){
+
+    }
+
     public function performFly()
     {
-        $this->flyBehaviour->fly();
+        return $this->flyBehaviour ?? $this->flyBehaviour->fly();
     }
 
     public function performVoce()

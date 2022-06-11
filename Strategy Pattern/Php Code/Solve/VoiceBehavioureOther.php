@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Solve;
 
 
 class VoiceBehavioureOther implements VoiceInterface

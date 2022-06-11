@@ -1,7 +1,8 @@
 <?php
 
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Refactoring;
+use App\Http\Controllers\Controller;
 
 
 class NavigatorControllerWithStrategy
@@ -16,6 +17,7 @@ class NavigatorControllerWithStrategy
     public function buildRoute($from, $to)
     {
         $this->route->getRoute();
+        return 'Build Route';
     }
 
 }

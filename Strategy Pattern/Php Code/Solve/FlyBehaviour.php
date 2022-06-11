@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Solve;
 
 
 class FlyBehaviour implements FlyInterface
@@ -10,6 +10,6 @@ class FlyBehaviour implements FlyInterface
 
     public function fly()
     {
-        // TODO: Implement fly() method.
+        return 'fly';
     }
 }
